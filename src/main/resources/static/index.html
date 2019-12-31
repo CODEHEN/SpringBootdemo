@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        function show() {
+            $.post("ajax/hello",{},function (result) {
+            alert(result)
+            })
+        }
+    </script>
+</head>
+<body>
+<p>Hello Greeting index.html</p>
+<button onclick="show()">Ajax测试按钮</button>
+<a href="/blog/21">博客</a>
+<a href="/blog/query?q=123456">搜索</a>
+</body>
+</html>
